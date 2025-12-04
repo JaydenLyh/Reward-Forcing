@@ -17,10 +17,10 @@ class CausalInferencePipeline(torch.nn.Module):
     ):
         super().__init__()
         # Step 1: Initialize all models
-        self.generator = WanDiffusionWrapper(
+        self.generator = WanDiffusionWrapper(checkpoint_path=args.checkpoint_path,
             **getattr(args, "model_kwargs", {}), is_causal=True) if generator is None else generator
-        self.text_encoder = WanTextEncoder() if text_encoder is None else text_encoder
-        self.vae = WanVAEWrapper() if vae is None else vae
+        self.text_encoder = WanTextEncoder(checkpoint_path=args.checkpoint_path) if text_encoder is None else text_encoder
+        self.vae = WanVAEWrapper(checkpoint_path=args.checkpoint_path) if vae is None else vae
 
         # Step 2: Initialize all causal hyperparmeters
         self.scheduler = self.generator.get_scheduler()
