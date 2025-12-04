@@ -1,55 +1,52 @@
 <div align="center">
 
-# Reward Forcing
-# Efficient Streaming Video Generation with Rewarded Distribution Matching Distillation
+
+# Reward Forcing: <br> Efficient Streaming Video Generation with <br> Rewarded Distribution Matching Distillation
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](your-arxiv-link)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://github.com/JaydenLyh/Reward-Forcing)
-[![Models](https://img.shields.io/badge/🤗-Models-yellow)](your-models-link)
+[![Models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/JaydenLu666/Reward-Forcing-T2V-1.3B)
 
 </div>
 
 ## 📢 News
----
+
 - **[2025-12-05]** 🎉 Code and pretrained models released!
 - **[2025-12-05]** 🌐 Project page is online!
 - **[2025-12-05]** 📝 Our paper is online!
 
 
 ## 🎯 Overview
----
+
 <div align="center">
   <img src="assets/teaser.png" width="800px">
 </div>
 
-We propose Reward Forcing to distill a bidirectional video diffusion model into a 4-step autoregressive student model that enables real-time (23.1 FPS) streaming video generation. Instead of using vanilla distribution matching distillation (DMD), Reward Forcing adopts a novel rewarded distribution matching distillation (Re-DMD) that prioritizes matching towards high-reward regions, leading to enhanced object motion dynamics and immersive scene navigation dynamics in generated videos.
+> **TL;DR**: We propose Reward Forcing to distill a bidirectional video diffusion model into a 4-step autoregressive student model that enables real-time (23.1 FPS) streaming video generation. Instead of using vanilla distribution matching distillation (DMD), Reward Forcing adopts a novel rewarded distribution matching distillation (Re-DMD) that prioritizes matching towards high-reward regions, leading to enhanced object motion dynamics and immersive scene navigation dynamics in generated videos.
 
 
 
 ## 📋 Table of Contents
----
+
 - [Requirements](#-requirements)
 - [Installation](#-installation)
 - [Pretrained Checkpoints](#-pretrained-checkpoints)
-- [Data Preparation](#-data-preparation)
 - [Inference](#-inference)
 - [Training](#-training)
-- [Evaluation](#-evaluation)
 - [Results](#-results)
 - [Citation](#-citation)
 - [Acknowledgements](#-acknowledgements)
-- [License](#-license)
 - [Contact](#-contact)
 
 
 ## 🔧 Hardware Requirements
----
+
 - GPU: NVIDIA GPU with at least 24GB memory for inference, 80GB memory for training.
 - RAM: 64GB or more recommended.
 - Linux operating system.
 
 ## 🛠️ Installation
----
+
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/JaydenLyh/Reward-Forcing.git
@@ -62,24 +59,19 @@ conda create -n reward_forcing python=3.10
 conda activate reward_forcing
 ```
 
-### Step 3: Install PyTorch
-```bash
-# CUDA 12.1
-pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
-```
 
-### Step 4: Install other dependencies
+### Step 3: Install dependencies
 ```bash
 pip install -r requirements.txt
+pip install flash-attn --no-build-isolation
 ```
 
-### Step 5: Install the package
+### Step 4: Install the package
 ```bash
 pip install -e .
 ```
 
 ## 📦 Pretrained Checkpoints
----
 ### Download Links
 
 | Model |  Download |
@@ -112,7 +104,6 @@ bash download_checkpoints.sh
 
 
 ## 🚀 Inference
----
 ### Quick Start
 ```bash
 # 5-seconds video inference
@@ -135,7 +126,6 @@ python inference.py \
 ```
 
 ## 🏋️ Training
----
 ### Multi-GPU Training
 ```bash
 # bash train.sh
@@ -161,7 +151,6 @@ Training configurations are in `configs/`:
 
 
 ## 📊 Results
----
 ### Quantitative Results
 
 #### Performance on VBench
@@ -184,7 +173,6 @@ Visualizations can be found in our [Project Page](your-project-page).
 
 
 ## 📄 Citation
----
 If you find this work useful, please consider citing:
 
 ```bibtex
@@ -199,7 +187,6 @@ If you find this work useful, please consider citing:
 
 
 ## 🙏 Acknowledgements
----
 This project is built upon several excellent works: [CausVid](https://github.com/tianweiy/CausVid), [Self Forcing](https://github.com/guandeh17/Self-Forcing), [Infinite Forcing](https://github.com/SOTAMak1r/Infinite-Forcing), [Wan2.1](https://github.com/Wan-Video/Wan2.1)
 
 We thank the authors for their great work and open-source contribution.
@@ -207,7 +194,6 @@ We thank the authors for their great work and open-source contribution.
 
 
 ## 📧 Contact
----
 For questions and discussions, please:
 - Open an issue on [GitHub Issues](link)
 - Contact us at: yunhonglu@zju.edu.cn
