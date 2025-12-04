@@ -4,7 +4,6 @@
   
 <h1>Reward Forcing: <br> Efficient Streaming Video Generation with <br> Rewarded Distribution Matching Distillation</h1>
 
-<!-- 作者列表 -->
 <div>
   <a href="#" target="_blank">Yunhong Lu</a><sup>1,2</sup>,
   <a href="https://zengyh1900.github.io/" target="_blank">Yanhong Zeng</a><sup>2</sup>,
@@ -23,16 +22,17 @@
 
 <br>
 
-<!-- 机构列表 (你需要根据实际情况修改这里) -->
 <div>
-  <sup>1</sup>Harbin Institute of Technology, 
+  <sup>1</sup>ZJU, 
   <sup>2</sup>Ant Group, 
-  <sup>3</sup>Peng Cheng Laboratory, <br>
-  <sup>4</sup>The Hong Kong Polytechnic University, 
-  <sup>5</sup>Author's Affiliation
+  <sup>3</sup>SIAS-ZJU, 
+  <sup>4</sup>HUST, 
+  <sup>5</sup>SJTU
 </div>
 
 </div>
+
+<br>
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](your-arxiv-link)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://reward-forcing.github.io/)
@@ -72,7 +72,7 @@
 - [Contact](#-contact)
 
 
-## 🔧 Hardware Requirements
+## 🔧 Requirements
 
 - GPU: NVIDIA GPU with at least 24GB memory for inference, 80GB memory for training.
 - RAM: 64GB or more recommended.
