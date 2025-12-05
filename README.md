@@ -34,7 +34,7 @@
 
 <br>
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](your-arxiv-link)
+[![Paper](https://arxiv.org/abs/2512.04678)](your-arxiv-link)
 [![Project Page](https://img.shields.io/badge/Project-Page-green)](https://reward-forcing.github.io/)
 [![Models](https://img.shields.io/badge/🤗-Models-yellow)](https://huggingface.co/JaydenLu666/Reward-Forcing-T2V-1.3B)
 
